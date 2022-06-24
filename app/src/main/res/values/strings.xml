@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">success_calculator</string>
+    <string name="histori">Histori</string>
+    <string name="home">Home</string>
+    <string name="kata_kata">Kata-Kata</string>
+    <string name="about_the_app">About the app</string>
+    <string name="about">Success calculator memprediksi seberapa sukses anda di masa depan hanya dengan input nama anda!</string>
+    <string name="pencet">Pencet</string>
+    <string name="masukkan_nama">Masukkan Namamu</string>
+    <string name="nama_invalid">Masukkan namamu dengan benar!</string>
+    <string name="data_kosong">Data Kosong</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="bagikan">bagikan</string>
+    <string name="kumpulan_orang_sukses">Kumpulan Orang Sukses</string>
+    <string name="no_data_available">Data Kosong</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem.</string>
+    <string name="koneksi_error">Gagal memuat data, pastikan anda terhubung dengan internet</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data orang sukses otomatis</string>
+    <string name="notif_title">Liat list orang sukses terbaru!</string>
+    <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+    <string name="nama">Nama</string>
+</resources>

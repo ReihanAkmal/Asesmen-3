@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ui.quotes.HomeFragment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        tools:context=".ui.quotes.HomeFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewNama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#a5899b"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="italic"
+                android:text="@string/masukkan_nama" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutInputNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutNama">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nama_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nama_inp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutInputNama">
+
+            <Button
+                android:id="@+id/generateKataButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:text="@string/pencet"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCardQuotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutButton">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardKataKata"
+                android:layout_width="320dp"
+                android:layout_height="90dp"
+                android:layout_margin="24sp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                android:layout_centerInParent="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24sp"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/kata_kata_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kata_kata"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bagikan"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutCardQuotes" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
